@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container nav1">
+      <nav>
+        <h1 id="logo"><span style="color: red">C</span>j Lee</h1>
+        <ul id="sidemenu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+    </div>
+    <div class="container">
+      <div id="header">
+        <div class="header-text">
+          <img src="assets/Me.PNG" alt="" />
+          <p>Full Stack Developer</p>
+          <h1>Hi, I'm <span>Leelavinoth</span><br />from Tamil Nadu</h1>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------About-------------------- -->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="assets/AboutMe.PNG" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am an aspiring full-stack developer with a strong foundation in
+              both front-end and back-end technologies. Passionate about
+              designing user-friendly interfaces and building efficient,
+              scalable systems, I aim to deliver seamless digital experiences.
+              Currently pursuing expertise in Java full-stack development, I
+              have hands-on experience in creating dynamic websites and
+              applications using HTML, CSS, JavaScript, and Java. With a keen
+              interest in continuous learning, I am dedicated to improving my
+              skills and contributing to innovative projects in a collaborative
+              environment.
+            </p>
+            <div class="tab-titles">
+              <div
+                class="tab-links active-link"
+                onclick="opentab('skills',event)"
+              >
+                Skills
+              </div>
+
+              <div class="tab-links" onclick="opentab('education', event)">
+                Education
+              </div>
+
+              <div class="tab-links" onclick="opentab('languages',event)">
+                Languages Known
+              </div>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Web Development</span><br />Designing Web Application
+                  Interfaces
+                </li>
+                <li><span>Programming Languages</span><br />Java</li>
+                <li>
+                  <span>Database Management</span><br />Writing and Optimizing
+                  SQL Queries
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2024</span><br />Full Stack Development Training at
+                  Qspiders
+                </li>
+                <li>
+                  <span>2024</span><br />BE in CSE from MIET Engineering College
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="languages">
+              <ul>
+                <li>Tamil</li>
+                <li>English</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ---------services------------------------------ -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <h2>Web Development</h2>
+            <p>
+              Design and develop responsive, modern, and user-friendly websites
+              using HTML, CSS, JavaScript, and modern frameworks like React,
+              Angular, and Vue.js. I offer custom web design, e-commerce
+              development, and more to meet your business needs.
+            </p>
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <h2>Java Development</h2>
+            <p>
+              Provide expert Java development for building robust, scalable, and
+              secure applications. Specializing in backend development, web
+              services, and enterprise-level software solutions using Spring,
+              Hibernate, and other Java technologies.
+            </p>
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <h2>SQL & Database Development</h2>
+            <p>
+              Offer database design, optimization, and management using SQL. I
+              create efficient, scalable databases and queries to ensure fast
+              and reliable data retrieval, along with complex reporting and data
+              analysis capabilities.
+            </p>
+            <a href="#">learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----------------------portfolio----------------------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="assets/work1.webp" alt="" />
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>
+                The app connects you to the talented people around the
+                world.Download it from play store
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="assets/work2.png" alt="" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                The app connects you to the talented people around the
+                world.Download it from play store
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="assets/work3.webp" alt="" />
+            <div class="layer">
+              <h3>Online Shopping App</h3>
+              <p>
+                The app connects you to the talented people around the
+                world.Download it from play store
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="" class="btn">See more</a>
+      </div>
+    </div>
+    <!-- -------contact------------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fas fa-paper-plane"></i>leelavinoth@2811gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>+91 9677891539</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter-square"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <a
+              href="assets/resume/LEELAVINOTH D Resume.docx"
+              download
+              class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                id="text_fixed"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; Cj. Made with Love <i class="fas fa-heart"></i></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxgV9c68EVr-VGaTREpZifFMrMI61v4Jeun8tBLoBBPvO91hbYMwIdcYU1VAR40658pEA/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById('msg');
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML = "Message set successfully"
+            setTimeout(() => {
+              msg.innerHTML=""
+            }, 5000);
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+  </body>
+</html>
