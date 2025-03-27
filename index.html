@@ -31,7 +31,7 @@
         <div class="header-text">
           <img src="assets/Me.PNG" alt="" />
           <p>Full Stack Developer</p>
-          <h1>Hi, I'm <span>Leelavinoth</span><br />from Tamil Nadu</h1>
+          <h1>Hi, I'm <span>Aravindh</span><br />from Tamil Nadu</h1>
         </div>
       </div>
     </div>
@@ -236,21 +236,22 @@
 
     <script src="script.js"></script>
     <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbxgV9c68EVr-VGaTREpZifFMrMI61v4Jeun8tBLoBBPvO91hbYMwIdcYU1VAR40658pEA/exec'
-      const form = document.forms['submit-to-google-sheet']
-      const msg = document.getElementById('msg');
-      form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => {
-            msg.innerHTML = "Message set successfully"
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxgV9c68EVr-VGaTREpZifFMrMI61v4Jeun8tBLoBBPvO91hbYMwIdcYU1VAR40658pEA/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message set successfully";
             setTimeout(() => {
-              msg.innerHTML=""
+              msg.innerHTML = "";
             }, 5000);
-            form.reset()
+            form.reset();
           })
-          .catch(error => console.error('Error!', error.message))
-      })
+          .catch((error) => console.error("Error!", error.message));
+      });
     </script>
   </body>
 </html>
